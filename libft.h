@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:12:42 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/17 13:28:09 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,11 @@ char			*ft_strnstr(const char *haystack, const char *needle,
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strtrim(char const *s1, char const *set);
+
+typedef struct s_list
+{
+	void				*content;
+	struct s_list		*next;
+}	t_list;
 
 #endif
