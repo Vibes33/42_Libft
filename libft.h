@@ -1,0 +1,55 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
+/*   Updated: 2025/10/17 09:12:42 by rydelepi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
+
+int				ft_atoi(char *str);
+void			ft_bzero(void *s, size_t n);
+void			*ft_calloc(size_t count, size_t size);
+int				ft_isalnum(int c);
+int				ft_isalpha(int c);
+int				ft_isascii(int c);
+int				ft_isalnum(int c);
+int				ft_isprint(char str);
+char			*ft_itoa(int n);
+void			*memchr(const void *s, int c, size_t n);
+int				memcmp(const void *s1, const void *s2, size_t n);
+void			*memcpy(void *dest, const void *src, size_t n);
+void			*memmove(void *dest, const void *src, size_t n);
+void			*ft_memset(void *b, int c, size_t len);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int nb, int fd);
+void			ft_putstr_fd(char *str, int fd);
+char			**ft_split(char const *s, char c);
+char			*ft_strdup(char *src);
+void			ft_striteri(char *s, void (*f)(unsigned int, char *));
+char			*ft_strjoin(int size, char **strs, char *sep);
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+size_t			strlcpy(char *dst, const char *src, size_t size);
+int				ft_strlen(char *str);
+int				ft_strncmp(char *s1, char *s2, unsigned int n);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
+int				tolower(int c);
+int				toupper(int c);
+char			*ft_strnstr(const char *haystack, const char *needle,
+					size_t len);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char			*ft_strrchr(const char *s, int c);
+char			*ft_strtrim(char const *s1, char const *set);
+
+#endif
