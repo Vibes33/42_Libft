@@ -17,6 +17,12 @@
 # include <unistd.h>
 # include <stdio.h>
 
+typedef struct s_list
+{
+    void                *content;
+    struct s_list        *next;
+}    t_list;
+
 int				ft_atoi(char *str);
 void			ft_bzero(void *s, size_t n);
 void			*ft_calloc(size_t count, size_t size);
@@ -41,8 +47,8 @@ void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strjoin(int size, char **strs, char *sep);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 size_t			strlcpy(char *dst, const char *src, size_t size);
-int				ft_strlen(char *str);
-int				ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_strlen(const char *str);
+int				ft_strncmp(const char *s1, const char *s2, unsigned int n);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 int				tolower(int c);
 int				toupper(int c);
@@ -53,11 +59,12 @@ char			*ft_strrchr(const char *s, int c);
 char			*ft_strtrim(char const *s1, char const *set);
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
-
-typedef struct s_list
-{
-	void				*content;
-	struct s_list		*next;
-}	t_list;
+void    ft_lstadd_back(t_list **lst, t_list *new);
+t_list    *ft_lstlast(t_list *lst);
+int    ft_lstsize(t_list *lst);
+void    ft_lstdelone(t_list *lst, void (*del)(void *));
+void    ft_lstclear(t_list **lst, void (*del)(void *));
+void    ft_lstiter(t_list *lst, void (*f)(void *));
+t_list    *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
