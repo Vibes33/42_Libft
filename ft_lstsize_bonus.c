@@ -1,11 +1,26 @@
-int    ft_lstsize(t_list *lst)
-{
-    int    count = 0;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/18 10:50:03 by rydelepi          #+#    #+#             */
+/*   Updated: 2025/10/18 10:55:17 by rydelepi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    while (lst)
-    {
-        count++;
-        lst = lst->next;
-    }
-    return (count);
+#include "libft.h"
+
+int	ft_lstsize(t_list *lst)
+{
+	int	count;
+
+	count = 0;
+	while (lst)
+	{
+		count++;
+		lst = lst->next;
+	}
+	return (count);
 }

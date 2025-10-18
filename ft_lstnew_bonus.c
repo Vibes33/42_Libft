@@ -6,9 +6,11 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 13:59:46 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 14:15:42 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/18 10:55:13 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 t_list	*ft_lstnew(void *content)
 {

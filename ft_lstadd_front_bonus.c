@@ -6,9 +6,11 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 14:09:21 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 14:15:29 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/18 10:54:47 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
