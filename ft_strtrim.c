@@ -12,44 +12,96 @@
 
 #include "libft.h"
 
-static	char	is_set(char c, char *s)
+static char    *find_begin(char const *s1, char const *set)
 {
-	int	i;
+    size_t    i;
+    size_t    j;
+    int        in_set;
 
-	i = 0;
-	while (s[i])
-	{
-		if (c == s[i])
-			return (1);
-		i++;
-	}
-	return (0);
+    in_set = 0;
+    i = 0;
+    j = 0;
+    while (s1[i])
+    {
+        in_set = 0;
+        j = 0;
+        while (set[j])
+        {
+            if (s1[i] == set[j])
+                in_set = 1;
+            j++;
+        }
+        if (!in_set)
+            break ;
+        i++;
+    }
+    return ((char *) s1 + i);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+static char    *find_end(char const *s1, char const *set, char const *begin)
 {
-	int		i;
-	int		j;
-	int		s1_len;
-	int		s2_len;
-	char	*s2;
+    size_t    i;
+    size_t    j;
+    int        in_set;
 
-	if (!s1)
-		return (0);
-	s1_len = ft_strlen(s1);
-	i = 0;
-	j = s1_len;
-	while (is_set(s1[i], (char *)set))
-		i++;
-	while (is_set(s1[--j], (char *)set))
-		if (j == 0)
-			break ;
-	s2_len = (s1_len - i) - (s1_len - j) + 2;
-	if (s2_len < 1)
-		s2_len = 1;
-	s2 = ft_calloc(s2_len, sizeof(char));
-	if (!s2)
-		return (0);
-	ft_strlcpy(s2, (char *)&s1[i], s2_len);
-	return (s2);
+    in_set = 0;
+    i = ft_strlen(s1) - 1;
+    j = 0;
+    while (s1 + i >= begin)
+    {
+        in_set = 0;
+        j = 0;
+        while (set[j])
+        {
+            if (s1[i] == set[j])
+                in_set = 1;
+            j++;
+        }
+        if (!in_set)
+            break ;
+        i--;
+    }
+    if (s1 + i < begin)
+        return ((char *) begin);
+    return ((char *) s1 + i);
+}
+
+static char    *fill_str(char const *begin, char const *end)
+{
+    char    *new;
+    size_t    i;
+
+    new = malloc(sizeof(char) * (end - begin + 2));
+    if (!new)
+        return (NULL);
+    i = 0;
+    while (begin + i <= end)
+    {
+        new[i] = begin[i];
+        i++;
+    }
+    new[i] = '\0';
+    return (new);
+}
+
+char    *ft_strtrim(char const *s1, char const *set)
+{
+    char    *begin;
+    char    *end;
+    char    *new;
+
+    begin = find_begin(s1, set);
+    end = find_end(s1, set, s1);
+    if (!s1[0] || end < begin)
+    {
+        new = malloc(sizeof(char) * 1);
+        if (!new)
+            return (NULL);
+        new[0] = '\0';
+    }
+    else
+        new = fill_str(begin, end);
+    if (!new)
+        return (NULL);
+    return (new);
 }
