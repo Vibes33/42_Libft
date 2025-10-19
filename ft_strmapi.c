@@ -29,3 +29,24 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new[i] = '\0';
 	return (new);
 }
+//int    main(int argc, char **argv)
+//{
+//    char    *res;
+//
+//    if (argc != 2)
+//    {
+//        printf("Usage: %s <string>\n", argv[0]);
+//        printf("Exemple: %s \"Hello 42!\"\n", argv[0]);
+//        return (1);
+//    }
+//    res = ft_strmapi(argv[1], ft_tolower);
+//    if (!res)
+//    {
+//        printf("Erreur d'allocation mémoire.\n");
+//        return (1);
+//    }
+//    printf("Avant ft_strmapi : %s\n", argv[1]);
+//    printf("Après ft_strmapi : %s\n", res);
+//    free(res);
+//    return (0);
+//}

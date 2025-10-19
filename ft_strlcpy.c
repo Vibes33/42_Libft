@@ -31,3 +31,26 @@ size_t    ft_strlcpy(char *dst, const char *src, size_t dstsize)
     }
     return (ft_strlen(src));
 }
+
+//int    main(int argc, char **argv)
+//{
+//    char    dest[100];
+//    char    *src;
+//    size_t    size;
+//    size_t    ret;
+//
+//    if (argc != 3 && argc != 4)
+//    {
+//        printf("Usage: %s <src> <size>\n", argv[0]);
+//        printf("Exemple: %s \"Hello World\" 5\n", argv[0]);
+//        return (1);
+//    }
+//    src = argv[1];
+//    size = (size_t)atoi(argv[2]);
+//    ret = ft_strlcpy(dest, src, size);
+//    printf("Source : \"%s\"\n", src);
+//    printf("Taille donnée : %zu\n", size);
+//    printf("Résultat après ft_strlcpy : \"%s\"\n", dest);
+//    printf("Valeur de retour : %zu\n", ret);
+//    return (0);
+//}

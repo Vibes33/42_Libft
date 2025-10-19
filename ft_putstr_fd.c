@@ -23,3 +23,19 @@ void	ft_putstr_fd(char *str, int fd)
 		i++;
 	}
 }
+
+//int    main(int argc, char **argv)
+//{
+//    int    fd;
+//
+//    if (argc != 3)
+//    {
+//        printf("Usage: %s <string> <fd>\n", argv[0]);
+//        printf("Exemple: %s \"Hello World\" 1\n", argv[0]);
+//        return (1);
+//    }
+//    fd = atoi(argv[2]);
+//    ft_putstr_fd(argv[1], fd);
+//    ft_putstr_fd("\n", fd);
+//    return (0);
+//}

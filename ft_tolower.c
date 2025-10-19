@@ -20,3 +20,20 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
+
+//int    main(int argc, char **argv)
+//{
+    //    int    c;
+//
+//    if (argc != 2)
+//    {
+ //       printf("Usage: %s <char>\n", argv[0]);
+ //       printf("Exemple: %s A\n", argv[0]);
+ //       return (1);
+ //   }
+ //   c = (unsigned char)argv[1][0];
+ //   printf("Avant ft_tolower : '%c' (code ASCII %d)\n", c, c);
+ //   c = ft_tolower(c);
+ //   printf("Après  ft_tolower : '%c' (code ASCII %d)\n", c, c);
+ //   return (0);
+//}

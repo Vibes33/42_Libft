@@ -37,3 +37,31 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    char    *res;
+//    size_t    start;
+ //   size_t    len;
+//
+ //   if (argc != 4)
+ //   {
+//       printf("Usage: %s <string> <start> <len>\n", argv[0]);
+//        printf("Exemple: %s \"Hello World\" 6 5\n", argv[0]);
+//        return (1);
+//    }
+//    start = (size_t)atoi(argv[2]);
+//    len = (size_t)atoi(argv[3]);
+ //   res = ft_substr(argv[1], start, len);
+//    if (!res)
+//    {
+//        printf("Erreur d'allocation mémoire.\n");
+//        return (1);
+//    }
+//    printf("Chaîne originale : \"%s\"\n", argv[1]);
+//    printf("Index de départ  : %zu\n", start);
+//    printf("Longueur demandée : %zu\n", len);
+//    printf("Résultat après ft_substr : \"%s\"\n", res);
+//    free(res);
+//    return (0);
+//}

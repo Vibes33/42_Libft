@@ -27,3 +27,21 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    char    dest[100];
+//    size_t    n;
+//
+//    if (argc != 3)
+//    {
+//        printf("Usage: %s <source> <n>\n", argv[0]);
+//        return (1);
+//    }
+//   n = (size_t)atoi(argv[2]);
+//    ft_memset(dest, 0, sizeof(dest));
+//    ft_memcpy(dest, argv[1], n);
+//    printf("Source : \"%s\"\n", argv[1]);
+//    printf("Copié  : \"%s\"\n", dest);
+//    return (0);
+//}

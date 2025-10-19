@@ -105,3 +105,26 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (new);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    char    *res;
+//
+//    if (argc != 3)
+//    {
+//        printf("Usage: %s <string> <set>\n", argv[0]);
+//        printf("Exemple: %s \"--Hello--\" \"-\"\n", argv[0]);
+//        return (1);
+//    }
+//    res = ft_strtrim(argv[1], argv[2]);
+//    if (!res)
+//    {
+//        printf("Erreur d'allocation mémoire.\n");
+//        return (1);
+//    }
+//    printf("Chaîne originale : \"%s\"\n", argv[1]);
+//    printf("Caractères à retirer : \"%s\"\n", argv[2]);
+//    printf("Résultat après ft_strtrim : \"%s\"\n", res);
+//    free(res);
+//    return (0);
+//}

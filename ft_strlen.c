@@ -23,3 +23,19 @@ int	ft_strlen(const char *str)
 	}
 	return (i);
 }
+
+//int    main(int argc, char **argv)
+//{
+ //   size_t    len;
+//
+ //   if (argc != 2)
+ //   {
+//        printf("Usage: %s <string>\n", argv[0]);
+//        printf("Exemple: %s \"Hello World\"\n", argv[0]);
+//        return (1);
+//    }
+//    len = ft_strlen(argv[1]);
+//    printf("Chaîne : \"%s\"\n", argv[1]);
+//    printf("Longueur calculée par ft_strlen : %zu\n", len);
+//    return (0);
+//}

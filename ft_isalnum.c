@@ -19,3 +19,24 @@ int	ft_isalnum(int c)
     else
         return (0);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    int    i;
+//
+//    if (argc != 2)
+//    {
+//        printf("Usage: %s <string>\n", argv[0]);
+//        return (1);
+//    }
+//    i = 0;
+//    while (argv[1][i])
+//    {
+//        if (ft_isalnum(argv[1][i]))
+//            printf("'%c' est alphanumérique ✅\n", argv[1][i]);
+//        else
+//            printf("'%c' n'est pas alphanumérique ❌\n", argv[1][i]);
+//        i++;
+//    }
+//    return (0);
+//}

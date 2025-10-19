@@ -27,3 +27,28 @@ int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 	}
 	return (0);
 }
+//
+//int    main(int argc, char **argv)
+//{
+//    int        result;
+//    size_t    n;
+//
+//    if (argc != 4)
+//    {
+//        printf("Usage: %s <string1> <string2> <n>\n", argv[0]);
+//        printf("Exemple: %s \"Hello\" \"Hellx\" 5\n", argv[0]);
+//        return (1);
+//    }
+//    n = (size_t)atoi(argv[3]);
+//    result = ft_strncmp(argv[1], argv[2], n);
+//    printf("Chaîne 1 : \"%s\"\n", argv[1]);
+//    printf("Chaîne 2 : \"%s\"\n", argv[2]);
+//    printf("Comparaison sur %zu caractères : %d\n", n, result);
+//    if (result == 0)
+//        printf("→ Les %zu premiers caractères sont identiques.\n", n);
+//    else if (result < 0)
+//        printf("→ \"%s\" est inférieure à \"%s\".\n", argv[1], argv[2]);
+//    else
+//        printf("→ \"%s\" est supérieure à \"%s\".\n", argv[1], argv[2]);
+//    return (0);
+//}

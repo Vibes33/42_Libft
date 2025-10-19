@@ -36,3 +36,29 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    char    buffer[100];
+//    size_t    n;
+//    size_t    src_index;
+//    size_t    dest_index;
+//
+//   if (argc != 4)
+//    {
+//        printf("Usage: %s <string> <src_index> <dest_index>\n", argv[0]);
+//        printf("Exemple: %s \"HelloWorld\" 0 5\n", argv[0]);
+//        return (1);
+//    }
+//
+//    ft_strlcpy(buffer, argv[1], sizeof(buffer));
+//    src_index = (size_t)atoi(argv[2]);
+//    dest_index = (size_t)atoi(argv[3]);
+//    n = ft_strlen(buffer) - src_index;
+//
+//    printf("Avant ft_memmove : %s\n", buffer);
+//    ft_memmove(buffer + dest_index, buffer + src_index, n);
+//    printf("Après ft_memmove : %s\n", buffer);
+//
+//    return (0);
+//}

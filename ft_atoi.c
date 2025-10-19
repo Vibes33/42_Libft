@@ -46,3 +46,17 @@ int	ft_atoi(char *str)
 	}
 	return (sign * total);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    int    result;
+//
+//    if (argc != 2)
+//    {
+//        printf("Usage: %s <string_to_convert>\n", argv[0]);
+//       return (1);
+//    }
+//    result = ft_atoi(argv[1]);
+//    printf("ft_atoi(\"%s\") = %d\n", argv[1], result);
+//    return (0);
+//}

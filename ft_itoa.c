@@ -63,3 +63,22 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    char    *result;
+//    int        nbr;
+//
+//    if (argc != 2)
+//    {
+//        printf("Usage: %s <integer>\n", argv[0]);
+//        return (1);
+//    }
+//    nbr = atoi(argv[1]);
+//    result = ft_itoa(nbr);
+//    if (!result)
+//        return (1);
+//    printf("ft_itoa(%d) = %s\n", nbr, result);
+//    free(result);
+//    return (0);
+//}
