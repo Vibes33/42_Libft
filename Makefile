@@ -71,12 +71,4 @@ fclean: clean
 
 re: fclean all
 
-run:
-	$(CC) $(CFLAGS) -I . $(FILE) libft.a -o test && ./test
-
-# --- Construire un exécutable nommé d'après la fonction ---
-one:
-	$(CC) $(CFLAGS) -I . main_$(NAME).c libft.a -o test_$(NAME)
-	@echo "Run: ./test_$(NAME)"
-
 .PHONY: all clean fclean re bonus
