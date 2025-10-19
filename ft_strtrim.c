@@ -12,98 +12,49 @@
 
 #include "libft.h"
 
-static char	*find_begin(char const *s1, char const *set)
+static int    is_in_set(char c, const char *set)
 {
-	size_t		i;
-	size_t		j;
-	int			in_set;
+    size_t k;
 
-	in_set = 0;
-	i = 0;
-	j = 0;
-	while (s1[i])
-	{
-		in_set = 0;
-		j = 0;
-		while (set[j])
-		{
-			if (s1[i] == set[j])
-				in_set = 1;
-			j++;
-		}
-		if (!in_set)
-			break ;
-		i++;
-	}
-	return ((char *) s1 + i);
+    if (!set)
+        return (0);
+    k = 0;
+    while (set[k])
+    {
+        if (set[k] == c)
+            return (1);
+        k++;
+    }
+    return (0);
 }
 
-static char	*find_end(char const *s1, char const *set, char const *begin)
+char    *ft_strtrim(char const *s1, char const *set)
 {
-	size_t		i;
-	size_t		j;
-	int			in_set;
+    size_t    start;
+    size_t    end;
+    size_t    len;
+    char    *out;
 
-	in_set = 0;
-	i = ft_strlen(s1) - 1;
-	j = 0;
-	while (s1 + i >= begin)
-	{
-		in_set = 0;
-		j = 0;
-		while (set[j])
-		{
-			if (s1[i] == set[j])
-				in_set = 1;
-			j++;
-		}
-		if (!in_set)
-			break ;
-		i--;
-	}
-	if (s1 + i < begin)
-		return ((char *) begin);
-	return ((char *) s1 + i);
-}
-
-static char	*fill_str(char const *begin, char const *end)
-{
-	char		*new;
-	size_t		i;
-
-	new = malloc(sizeof(char) * (end - begin + 2));
-	if (!new)
-		return (NULL);
-	i = 0;
-	while (begin + i <= end)
-	{
-		new[i] = begin[i];
-		i++;
-	}
-	new[i] = '\0';
-	return (new);
-}
-
-char	*ft_strtrim(char const *s1, char const *set)
-{
-	char	*begin;
-	char	*end;
-	char	*new;
-
-	begin = find_begin(s1, set);
-	end = find_end(s1, set, s1);
-	if (!s1[0] || end < begin)
-	{
-		new = malloc(sizeof(char) * 1);
-		if (!new)
-			return (NULL);
-		new[0] = '\0';
-	}
-	else
-		new = fill_str(begin, end);
-	if (!new)
-		return (NULL);
-	return (new);
+    if (!s1)
+        return (NULL);
+    // Trouver le premier index non set
+    start = 0;
+    while (s1[start] && is_in_set(s1[start], set))
+        start++;
+    // Si tout est mangé → chaîne vide
+    if (s1[start] == '\0')
+        return (ft_strdup(""));
+    // Trouver le dernier index non set
+    end = ft_strlen(s1) - 1;
+    while (end > start && is_in_set(s1[end], set))
+        end--;
+    // Longueur utile = end - start + 1
+    len = end - start + 1;
+    out = (char *)malloc(len + 1);
+    if (!out)
+        return (NULL);
+    ft_strlcpy(out, s1 + start, len + 1);
+    return (out);
 }
 
 //int    main(int argc, char **argv)
