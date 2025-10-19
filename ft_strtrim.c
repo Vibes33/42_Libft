@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//Cette fonction teste si un caractère c appartient à set.
 static int    is_in_set(char c, const char *set)
 {
     size_t k;
