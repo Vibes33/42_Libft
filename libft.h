@@ -30,7 +30,8 @@ int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_isascii(int c);
 int				ft_isalnum(int c);
-int				ft_isprint(char str);
+int             ft_isdigit(int c);
+int             ft_isprint(int c);
 char			*ft_itoa(int n);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -45,8 +46,8 @@ char			**ft_split(char const *s, char c);
 char			*ft_strdup(char *src);
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strjoin(int size, char **strs, char *sep);
-size_t          ft_strlcat(char *d, const char *s, size_t dstsize)
-size_t          ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t          ft_strlcat(char *d, const char *s, size_t dstsize);
+size_t          ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int				ft_strlen(const char *str);
 int				ft_strncmp(const char *s1, const char *s2, unsigned int n);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
