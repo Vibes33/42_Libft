@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:06 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 13:51:46 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:26:50 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ int	ft_atoi(char *str)
 	}
 	return (sign * total);
 }
-
 //int    main(int argc, char **argv)
 //{
 //    int    result;

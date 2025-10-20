@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 09:05:48 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:04:21 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 12:34:18 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,26 +27,18 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-//int    main(int argc, char **argv)
-//{
+// int    main(int argc, char **argv)
+// {
 //    char    buffer[100];
 //    int        c;
 //    size_t    n;
 //    size_t    i;
-//
-//    if (argc != 3)
-//    {
-//        printf("Usage: %s <char> <n>\n", argv[0]);
-//        printf("Exemple: %s X 10\n", argv[0]);
-//        return (1);
-//    }
+//    (void)argc;
 //    c = argv[1][0];
 //    n = (size_t)atoi(argv[2]);
 //    if (n > sizeof(buffer))
 //       n = sizeof(buffer);
-//
 //    ft_memset(buffer, c, n);
-//
 //   printf("Buffer après ft_memset('%c', %zu) :\n", c, n);
 //   i = 0;
 //   while (i < n)
@@ -56,4 +48,4 @@ void	*ft_memset(void *b, int c, size_t len)
 //    }
 //    printf("\n");
 //    return (0);
-//}
+// }

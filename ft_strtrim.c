@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 09:00:34 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 09:07:11 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 13:51:10 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,25 +53,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (out);
 }
 
-//int    main(int argc, char **argv)
-//{
+// int    main(int argc, char **argv)
+// {
 //    char    *res;
-//
-//    if (argc != 3)
-//    {
-//        printf("Usage: %s <string> <set>\n", argv[0]);
-//        printf("Exemple: %s \"--Hello--\" \"-\"\n", argv[0]);
-//        return (1);
-//    }
 //    res = ft_strtrim(argv[1], argv[2]);
-//    if (!res)
-//    {
-//        printf("Erreur d'allocation mémoire.\n");
-//        return (1);
-//    }
 //    printf("Chaîne originale : \"%s\"\n", argv[1]);
 //    printf("Caractères à retirer : \"%s\"\n", argv[2]);
 //    printf("Résultat après ft_strtrim : \"%s\"\n", res);
 //    free(res);
 //    return (0);
-//}
+// }

@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 10:43:48 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 09:08:42 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 13:07:53 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,32 +24,21 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-//static void    to_uppercase(unsigned int i, char *c)
-//{
+// static void    to_uppercase(unsigned int i, char *c)
+// {
 //    (void)i;
 //    if (*c >= 'a' && *c <= 'z')
 //        *c -= 32;
-//}
+// }
 
-//int    main(int argc, char **argv)
-//{
+// int    main(int argc, char **argv)
+// {
+// 	(void)argc;
 //    char    *str;
-//
-//   if (argc != 2)
-//   {
-//       printf("Usage: %s <string>\n", argv[0]);
-//        printf("Exemple: %s \"Hello 42!\"\n", argv[0]);
-//        return (1);
-//    }
 //    str = ft_strdup(argv[1]);
-//    if (!str)
-//    {
-//        printf("Erreur d'allocation mémoire.\n");
-//        return (1);
-//    }
 //    printf("Avant ft_striteri : %s\n", str);
 //    ft_striteri(str, to_uppercase);
 //    printf("Après ft_striteri : %s\n", str);
 //    free(str);
 //    return (0);
-//}
+// }

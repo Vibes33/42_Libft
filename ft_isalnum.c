@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:03:09 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 09:11:50 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:44:58 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,18 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-//int    main(int argc, char **argv)
-//{
+// int    main(int argc, char **argv)
+// {
+// 	(void) argc;
 //    int    i;
-//
-//    if (argc != 2)
-//    {
-//        printf("Usage: %s <string>\n", argv[0]);
-//        return (1);
-//    }
 //    i = 0;
 //    while (argv[1][i])
 //    {
-//        if (ft_isalnum(argv[1][i]))
-//            printf("'%c' est alphanumérique ✅\n", argv[1][i]);
-//        else
-//            printf("'%c' n'est pas alphanumérique ❌\n", argv[1][i]);
-//        i++;
+// 	   if (ft_isalnum(argv[1][i]))
+// 		   printf("'%c' est alphanumérique\n", argv[1][i]);
+// 	   else
+// 		   printf("'%c' \n", argv[1][i]);
+// 	   i++;
 //    }
 //    return (0);
-//}
+// }

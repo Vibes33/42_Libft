@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:29 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/18 10:49:22 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 12:34:26 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,20 +28,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-//int    main(int argc, char **argv)
-//{
-//    char    dest[100];
-//    size_t    n;
-//
-//    if (argc != 3)
-//    {
-//        printf("Usage: %s <source> <n>\n", argv[0]);
-//        return (1);
-//    }
-//   n = (size_t)atoi(argv[2]);
-//    ft_memset(dest, 0, sizeof(dest));
-//    ft_memcpy(dest, argv[1], n);
-//    printf("Source : \"%s\"\n", argv[1]);
-//    printf("Copié  : \"%s\"\n", dest);
-//    return (0);
-//}
+// int	 main(int argc, char **argv)
+// {
+// 	size_t	 n;
+// 	char *result;
+// 	(void)argc;
+// 	n = (size_t)atoi(argv[3]);
+// 	result = ft_memcpy(argv[1],argv[2], n );
+// 	printf("%s",result);
+// }

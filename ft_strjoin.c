@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:15:57 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:03:31 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 13:24:32 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,25 +77,14 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (result);
 }
 
-//int    main(int argc, char **argv)
-//{
-//    char    *res;
-//
-//   if (argc != 3)
-//    {
-//        printf("Usage: %s <string1> <string2>\n", argv[0]);
-//        printf("Exemple: %s \"Hello \" \"World!\"\n", argv[0]);
-//        return (1);
-//    }
-//    res = ft_strjoin(argv[1], argv[2]);
-//    if (!res)
-//    {
-//        printf("Erreur d'allocation mémoire.\n");
-//        return (1);
-//    }
-//    printf("Chaîne 1 : \"%s\"\n", argv[1]);
-//    printf("Chaîne 2 : \"%s\"\n", argv[2]);
-//    printf("Résultat : \"%s\"\n", res);
-//    free(res);
-//    return (0);
-//}
+// int main (void)
+// {
+// 	char *strs[4]= {"hello", "hi", "안녕하세요", "halo"};
+// 	char *sep = "-";
+// 	char *result;
+
+// 	result = ft_strjoin(4,strs,sep);
+// printf("%s",result);
+// free(result);
+// 	return(0);
+// }

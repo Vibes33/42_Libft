@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:39 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 09:09:31 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 12:44:21 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,18 +82,13 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-//int    main(int argc, char **argv)
-//{
+// int    main(int argc, char **argv)
+// {
 //    char    **tab;
 //    int        i;
 //    char    *str;
 //    char    sep;
-//
-//    if (argc != 3)
-//    {
-//        printf("Usage: %s <string> <separator>\n", argv[0]);
-//        return (1);
-//    }
+// 	(void) argc;
 //    str = argv[1];
 //   sep = argv[2][0];
 //    tab = ft_split(str, sep);
@@ -108,4 +103,4 @@ char	**ft_split(char const *s, char c)
 //   }
 //    free(tab);
 //    return (0);
-//}
+// }
