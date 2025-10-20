@@ -6,56 +6,51 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 09:00:34 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/18 10:48:19 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:07:11 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Cette fonction teste si un caractère c appartient à set.
-static int    is_in_set(char c, const char *set)
+static int	is_in_set(char c, const char *set)
 {
-    size_t k;
+	size_t	k;
 
-    if (!set)
-        return (0);
-    k = 0;
-    while (set[k])
-    {
-        if (set[k] == c)
-            return (1);
-        k++;
-    }
-    return (0);
+	if (!set)
+		return (0);
+	k = 0;
+	while (set[k])
+	{
+		if (set[k] == c)
+			return (1);
+		k++;
+	}
+	return (0);
 }
 
-char    *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    size_t    start;
-    size_t    end;
-    size_t    len;
-    char    *out;
+	size_t	start;
+	size_t	end;
+	size_t	len;
+	char	*out;
 
-    if (!s1)
-        return (NULL);
-    // Trouver le premier index non set
-    start = 0;
-    while (s1[start] && is_in_set(s1[start], set))
-        start++;
-    // Si tout est mangé → chaîne vide
-    if (s1[start] == '\0')
-        return (ft_strdup(""));
-    // Trouver le dernier index non set
-    end = ft_strlen(s1) - 1;
-    while (end > start && is_in_set(s1[end], set))
-        end--;
-    // Longueur utile = end - start + 1
-    len = end - start + 1;
-    out = (char *)malloc(len + 1);
-    if (!out)
-        return (NULL);
-    ft_strlcpy(out, s1 + start, len + 1);
-    return (out);
+	if (!s1)
+		return (NULL);
+	start = 0;
+	while (s1[start] && is_in_set(s1[start], set))
+		start++;
+	if (s1[start] == '\0')
+		return (ft_strdup(""));
+	end = ft_strlen(s1) - 1;
+	while (end > start && is_in_set(s1[end], set))
+		end--;
+	len = end - start + 1;
+	out = (char *)malloc(len + 1);
+	if (!out)
+		return (NULL);
+	ft_strlcpy(out, s1 + start, len + 1);
+	return (out);
 }
 
 //int    main(int argc, char **argv)

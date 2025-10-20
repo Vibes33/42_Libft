@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:24:31 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/15 15:06:12 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:07:26 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int	ft_strlen(const char *str)
 
 //int    main(int argc, char **argv)
 //{
- //   size_t    len;
+//   size_t    len;
 //
- //   if (argc != 2)
- //   {
+//   if (argc != 2)
+//   {
 //        printf("Usage: %s <string>\n", argv[0]);
 //        printf("Exemple: %s \"Hello World\"\n", argv[0]);
 //        return (1);

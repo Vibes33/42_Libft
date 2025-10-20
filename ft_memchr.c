@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:22 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:04:41 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:11:12 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 //        printf("Caractère '%c' trouvé à la position : %ld\n", c,
 //            (long)((unsigned char *)res - (unsigned char *)str));
 //    else
-//        printf("Caractère '%c' non trouvé dans les %zu premiers octets.\n", c, n);
+//        printf("Caractère '%c' non trouvé", c);
 //    return (0);
 //}

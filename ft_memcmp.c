@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:25 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/18 10:49:49 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:10:44 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 //    }
 //    n = (size_t)atoi(argv[3]);
 //    result = ft_memcmp(argv[1], argv[2], n);
-//    printf("ft_memcmp(\"%s\", \"%s\", %zu) = %d\n", argv[1], argv[2], n, result);
+//    printf("ft_memcmp(\"%s\", \"%s\", %zu) = %d\n", 
+//    argv[1], argv[2], n, result);
 //    if (result < 0)
-//        printf("→ \"%s\" est inférieure à \"%s\" sur les %zu premiers octets.\n",
-//            argv[1], argv[2], n);
+//        printf("→ \"%s\" est inférieure à \"%s\" 
+// sur les %zu premiers octets.\n", argv[1], argv[2], n);
 //    else if (result > 0)
-//        printf("→ \"%s\" est supérieure à \"%s\" sur les %zu premiers octets.\n",
-//            argv[1], argv[2], n);
+//        printf("→ \"%s\" est supérieure à \"%s\" sur les 
+// %zu premiers octets.\n", argv[1], argv[2], n);
 //    else
 //        printf("→ Les %zu premiers octets sont identiques.\n", n);
 //    return (0);

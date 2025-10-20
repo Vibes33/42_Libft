@@ -6,13 +6,13 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:04:48 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:04:50 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:11:40 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 33 && c <= 126);
 }

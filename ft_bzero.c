@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:39:21 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 14:18:44 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:12:21 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	ft_bzero(void *s, size_t n)
 //        printf("%c ", buffer[i]);
 //        i++;
 //    }
- //   printf("\n");
+//   printf("\n");
 //
 //    ft_bzero(buffer, n);
 //

@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 10:43:48 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:03:35 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:08:42 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 //{
 //    char    *str;
 //
- //   if (argc != 2)
- //   {
- //       printf("Usage: %s <string>\n", argv[0]);
+//   if (argc != 2)
+//   {
+//       printf("Usage: %s <string>\n", argv[0]);
 //        printf("Exemple: %s \"Hello 42!\"\n", argv[0]);
 //        return (1);
 //    }

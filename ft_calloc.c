@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 09:09:56 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:05:16 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 09:12:12 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,8 @@ void	*ft_calloc(size_t count, size_t size)
 //        printf("Allocation échouée\n");
 //       return (1);
 //   }
-//    printf("Mémoire allouée (%zu * %zu = %zu octets):\n", count, size, count * size);
+//    printf("Mémoire allouée (%zu * %zu = %zu octets):\n", 
+// count, size, count * size);
 //    i = 0;
 //    while (i < count * size)
 //    {
