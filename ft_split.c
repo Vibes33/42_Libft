@@ -6,80 +6,74 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:39 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 12:44:21 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:42:07 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_words(char const *s, char c)
+static int	count_word(char const *s, char c)
 {
-	size_t	words;
-	size_t	i;
+	int	i;
+	int	len;
 
-	words = 0;
 	i = 0;
+	len = 0;
 	while (s[i])
 	{
-		if (s[i] != c && (s[i + 1] == c || s[i + 1] == '\0'))
-			words++;
-		i++;
-	}
-	return (words);
-}
-
-static void	fill_tab(char *new, char const *s, char c)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] && s[i] != c)
-	{
-		new[i] = s[i];
-		i++;
-	}
-	new[i] = '\0';
-}
-
-static void	set_mem(char **tab, char const *s, char c)
-{
-	size_t	count;
-	size_t	index;
-	size_t	i;
-
-	index = 0;
-	i = 0;
-	while (s[index])
-	{
-		count = 0;
-		while (s[index + count] && s[index + count] != c)
-			count++;
-		if (count > 0)
-		{
-			tab[i] = malloc(sizeof(char) * (count + 1));
-			if (!tab[i])
-				return ;
-			fill_tab(tab[i], (s + index), c);
+		while (s[i] == c)
 			i++;
-			index = index + count;
-		}
-		else
-			index++;
+		if (s[i])
+			len++;
+		while (s[i] != c && s[i])
+			i++;
 	}
-	tab[i] = 0;
+	return (len);
+}
+
+static int	ft_strlen_c(char *str, char c)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] && str[i] != c)
+		i++;
+	return (i);
+}
+
+static char	**free_arr(int i, char **arr)
+{
+	while (i > 0)
+		free(arr[--i]);
+	free(arr);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	words;
-	char	**tab;
+	int		i;
+	int		nbword;
+	int		len;
+	char	**arr;
 
-	words = count_words(s, c);
-	tab = malloc(sizeof(char *) * (words + 1));
-	if (!tab)
+	i = 0;
+	nbword = count_word(s, c);
+	arr = malloc(sizeof(char *) * (nbword + 1));
+	if (!arr)
 		return (NULL);
-	set_mem(tab, s, c);
-	return (tab);
+	while (i < nbword)
+	{
+		while (*s == c && *s)
+			s++;
+		len = ft_strlen_c((char *) s, c);
+		arr[i] = ft_substr(s, 0, len);
+		if (!arr[i])
+			return (free_arr(i, arr));
+		s += len;
+		i++;
+	}
+	arr[i] = NULL;
+	return (arr);
 }
 
 // int    main(int argc, char **argv)

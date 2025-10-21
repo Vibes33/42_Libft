@@ -6,15 +6,15 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:24:31 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 09:07:26 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:45:00 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')

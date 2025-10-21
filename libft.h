@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 16:44:36 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/21 15:55:58 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -192,13 +192,13 @@ char			*ft_strdup(char *src);
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 /**
  * @details
- * @brief met bout a bout des "mots" separes par un separateur
+ * @brief met bout a bout deux chaines
  * @param int.size 
- * @param char.**strs tableau de chaines de caracteres
- * @param char.*sep separateur 
- * @return return une chaine de caractere 
+ * @param char.const.*s1 chaine 1
+ * @param char.const.*s2 chaine 2
+ * @return return une chaine de caractere contenant les deux chaines
  */
-char			*ft_strjoin(int size, char **strs, char *sep);
+char			*ft_strjoin(char const *s1, char const *s2);
 /**
  * @details
  * @brief concatene des elements d'un tableau src vers dest en fonction de size
@@ -207,7 +207,7 @@ char			*ft_strjoin(int size, char **strs, char *sep);
  * @param size_t.dstsize taille des elements a concatener
  * @return taille totale de la string qu'elle cree
  */
-size_t			ft_strlcat(char *d, const char *s, size_t dstsize);
+size_t			ft_strlcat(char *dst, const char *src, size_t size);
 /**
  * @details
  * @brief copie des elements d'un tableau src vers dest en fonction de size
@@ -223,7 +223,7 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
  * @param const.char.*str chaine de caractere
  * @return taille de src
  */
-int				ft_strlen(const char *str);
+size_t			ft_strlen(const char *str);
 /**
  * @details
  * @brief compare deyx chaines de caracteres sur n caracteres

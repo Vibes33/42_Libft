@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:06 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 16:49:44 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/20 16:51:41 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ int	ft_atoi(char *str)
 			sign *= -1;
 		i++;
 	}
-	if (too_long(&nptr[i], sign) != 1)
-		return (too_long(&nptr[i], sign));
+	if (too_long(&str[i], sign) != 1)
+		return (too_long(&str[i], sign));
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		total = total * 10 + (str[i] - '0');
