@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:15:57 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/21 15:42:13 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/21 16:09:54 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2);
 	str = malloc(len * sizeof(char) + 1);
 	if (!str)
