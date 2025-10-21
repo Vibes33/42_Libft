@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/21 15:55:58 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/21 16:54:47 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,21 +27,21 @@ typedef struct s_list
 /**
  * @details
  * @brief char -> int
- * @param char*str chaine de caractere
+ * @param char*str character string
  * @return int sign * total
  */
 int				ft_atoi(char *str);
 /**
  * @details
- * @brief Met tout a zero
- * @param void*s adresse zone memoire  
- * @param size_tn nombre d'octets a 0 
- * @return s (zone memoire)
+ * @brief Sets everything to zero
+ * @param void*s memory area address  
+ * @param size_tn number of bytes to set to 0 
+ * @return s (memory area)
  */
 void			ft_bzero(void *s, size_t n);
 /**
  * @details
- * @brief Contiguous allocation (alloue et init a 0)
+ * @brief Continuous allocation (allocates and initializes to 0)
  * @param size_t count, size_t size 
  * @return ptr = malloc(total)
  */
@@ -55,23 +55,23 @@ void			*ft_calloc(size_t count, size_t size);
 int				ft_isalnum(int c);
 /**
  * @details
- * @brief est une lettre 
- * @param int c caractere a verifier
- * @return 1 ou 0
+ * @brief is alphanumeric 
+ * @param int c character to check
+ * @return 1 or 0
  */
 int				ft_isalpha(int c);
 /**
  * @details
- * @brief est ascii 
- * @param int c caractere a verifier
- * @return 1 ou 0
+ * @brief is ascii 
+ * @param int c character to check
+ * @return 1 or 0
  */
 int				ft_isascii(int c);
 /**
  * @details
- * @brief est un chiffre 
- * @param int c caractere a verifier
- * @return 1 ou 0
+ * @brief is a number 
+ * @param int c character to check
+ * @return 1 or 0
  */
 int				ft_isdigit(int c);
 /**
@@ -83,79 +83,77 @@ int				ft_isdigit(int c);
 int				ft_isprint(int c);
 /**
  * @details
- * @brief int -> char 
- * @param int.n caractere a transformer
- * @return chaine de caractere
+ * @brief is printable
+ * @param int c character to check
+ * @return 1 or 0
  */
 char			*ft_itoa(int n);
 /**
  * @details
- * @brief scanne les n premiers byte d'une zone mem pointee par s
- * @param const.void.*s la zone memoire
- * @param int.c caractere a trouver
- * @param size_t.n nombre de bytes a scanner
- * @return pointeur vers l'octet find
+ * @brief scans the first n bytes of a memory area pointed to by s
+ * @param const.void.*s the memory area
+ * @param int.c character to find
+ * @param size_t.n number of bytes to scan
+ * @return pointer to the found byte
  */
 void			*ft_memchr(const void *s, int c, size_t n);
 /**
  * @details
- * @brief compare les n premiers bytes de deux strings
- * @param const.void.*s1 chaine 1
- * @param const.void.*s2 chaine 2
- * @param size_t.n nombre de bytes a comparer
- * @return int (difference ascii des 2 chaines)
+ * @brief compares the first n bytes of two strings
+ * @param const.void.*s1 string 1
+ * @param const.void.*s2 string 2
+ * @param size_t.n number of bytes to compare
+ * @return int (ASCII difference between the two strings)
  */
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 /**
  * @details
- * @brief copie les n premiers byte de deux strings
+ * @brief copies the first n bytes of two strings
  * @param const.void.*src source
  * @param void.*dest destination
- * @param size_t.n nombre de bytes a copier
+ * @param size_t.n number of bytes to copy
  * @return dest
  */
 void			*ft_memcpy(void *dest, const void *src, size_t n);
 /**
  * @details
- * @brief deplace une memoire tampon vers une autre
+ * @brief déplace une mémoire tampon vers une autre
  * @param const.void.*src source
  * @param void.*dest destination
- * @param size_t.n nombre de bytes a deplacer
+ * @param size_t.n nombre d'octets à déplacer
  * @return dest
  */
 void			*ft_memmove(void *dest, const void *src, size_t n);
 /**
  * @details
- * @brief definit n premiers caracteres de dest en fonction de c
+ * @brief sets the first characters of dest based on c
  * @param void.*b destination
- * @param int.c caractere a definir
- * @param size_t.len nombres de caracteres a changer
+ * @param int.c character to set
+ * @param size_t.len number of characters to modify
  * @return destination (b)
  */
 void			*ft_memset(void *b, int c, size_t len);
 /**
  * @details
- * @brief affiche un caractere 
- * @param char.c caractere a afficher
- * @param int.fd file descriptor , definit la sortie
+ * @brief displays a character 
+ * @param char.c character to display
+ * @param int.fd file descriptor, defines the output
  * @return void
  */
 void			ft_putchar_fd(char c, int fd);
 /**
  * @details
- * @brief definit n premiers caracteres de dest en 
- * fonction de c et saute une ligne
- * @param char.c caractere a definir
- * @param int.fd file descriptor , definit la sortie
+ * @brief defines the first n characters of dest based on c and skips a line
+ * @param char.c character to be defined
+ * @param int.fd file descriptor, defines the output
  * @return void
  */
 void			ft_putendl_fd(char *s, int fd);
 /**
  * @details
- * @brief definit n premiers caracteres de dest en 
- * fonction de c et saute une ligne
- * @param int.nb caractere a definir
- * @param int.fd file descriptor , definit la sortie
+ * @brief defines the first n characters of dest based on c and skips a line
+ * @param int.nb character to be defined
+ * @param int.fd file descriptor, defines the output
  * @return void
  */
 void			ft_putnbr_fd(int nb, int fd);
@@ -169,215 +167,216 @@ void			ft_putnbr_fd(int nb, int fd);
 void			ft_putstr_fd(char *str, int fd);
 /**
  * @details
- * @brief decoupe une chaine *s en "mots" separes par le caractere c
- * @param char.const.*s chaine de caaracteres
- * @param char.c separateur
- * @return tableau de char termine par NULL
+ * @brief reads a character string
+ * @param char.*str character string
+ * @param int.fd file descriptor, defines the output
+ * @return void
  */
 char			**ft_split(char const *s, char c);
 /**
  * @details
- * @brief duplique une chaine de caractere dans une var dest
- * @param char.src chaine de caractere a dupliquer
+ * @brief Duplicates a character string in a var dest
+ * @param char.src Character string to be duplicated
  * @return dest
  */
 char			*ft_strdup(char *src);
 /**
  * @details
- * @brief applique une fonction sur chaque bytes de *s
- * @param char.s 
- * @param void.(*f).(unsigned int, char *) fonction a appliquer
+ * @brief Applies a function to each byte of *s
+ * @param char.s
+ * @param void.(*f).(unsigned int, char *) Function to apply
  * @return void
  */
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 /**
  * @details
- * @brief met bout a bout deux chaines
+ * @brief concatenates two strings
  * @param int.size 
- * @param char.const.*s1 chaine 1
- * @param char.const.*s2 chaine 2
- * @return return une chaine de caractere contenant les deux chaines
+ * @param char.const.*s1 string 1
+ * @param char.const.*s2 string 2
+ * @return returns a character string containing both strings
  */
 char			*ft_strjoin(char const *s1, char const *s2);
 /**
  * @details
- * @brief concatene des elements d'un tableau src vers dest en fonction de size
- * @param char *d destination 
+ * @brief concatenates elements from an array src to dest based on size
+ * @param char *d destination
  * @param const.char.*s source
- * @param size_t.dstsize taille des elements a concatener
- * @return taille totale de la string qu'elle cree
+ * @param size_t.dstsize size of elements to concatenate
+ * @return total size of the string it creates
  */
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 /**
  * @details
- * @brief copie des elements d'un tableau src vers dest en fonction de size
- * @param char *dst destination 
+ * @brief copies elements from an array src to dest based on size
+ * @param char *dst destination
  * @param const.char.*src source
- * @param size_t.dstsize taille des elements a copier
- * @return taille totale de la string qu'elle cree
+ * @param size_t.dstsize size of elements to copy
+ * @return total size of the string it creates
  */
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 /**
  * @details
- * @brief compte le nombre d'element d'une chaine de caractere
- * @param const.char.*str chaine de caractere
- * @return taille de src
+ * @brief Counts the number of elements in a character string.
+ * @param const.char.*str Character string.
+ * @return Size of src.
  */
 size_t			ft_strlen(const char *str);
 /**
  * @details
- * @brief compare deyx chaines de caracteres sur n caracteres
- * @param const.char.*s1 chaine 1
- * @param const.char.*s2 chaine 2
- * @param unsigned.int.n nombre de caracteres a comparer
- * @return 0 ou la difference asqii des caracteres des deux chaines
+ * @brief compares two character strings of n characters
+ * @param const.char.*s1 string 1
+ * @param const.char.*s2 string 2
+ * @param unsigned.int.n number of characters to compare
+ * @return 0 or the ASCII difference between the characters in the two strings
  */
 int				ft_strncmp(const char *s1, const char *s2, unsigned int n);
 /**
  * @details
- * @brief prends un extrait de texte a partir de start, 
- * en copiant n caracteres
- * @param const.char.*s chaine de caractere a parcourir
- * @param unsigned.int.start caractere de depart de la lecture
- * @param size_t.len taille de la chaine a renvoyer
- * @return une chaine malloc sub renvoyant les caracteres 
- * depuis start en fonction de n
+ * @brief Takes a text extract from start, 
+ * copying n characters
+ * @param const.char.*s character string to scan
+ * @param unsigned.int.start starting character for reading
+ * @param size_t.len size of the string to return
+ * @return a malloc sub string returning the characters 
+ * from start according to n
  */
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 /**
  * @details
- * @brief applique un +32 a chaque caractere c
- * @param int.c caractere a modifier
- * @return le caractere modifie
+ * @brief Applies +32 to each character c
+ * @param int.c Character to be modified
+ * @return Modified character
  */
 int				ft_tolower(int c);
 /**
  * @details
- * @brief applique un -32 a chaque caractere c
- * @param int.c caractere a modifier
- * @return le caractere modifie
+ * @brief applies -32 to each character c
+ * @param int.c character to be modified
+ * @return the modified character
  */
 int				ft_toupper(int c);
 /**
  * @details
- * @brief cherche la premiere occurence de needle dans h
- *  en fonction de len
- * @param const.char.*haystack meule de foin
- * @param const.char.*needle aiguille
- * @param size_t.len nombres de caracteres a lire 
- * dans haystack
- * @return char , pointeur sur le debut de l'occurence sinon NULL
+ * @brief searches for the first occurrence of needle in h
+ *  based on len
+ * @param const.char.*haystack haystack
+ * @param const.char.*needle needle
+ * @param size_t.len number of characters to read 
+ * in haystack
+ * @return char , pointer to the start of the occurrence, otherwise NULL
  */
 char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);
 /**
  * @details
- * @brief applique une fonction qui applique la fonction f 
- * aux caracteres d'une chaine s
- * @param char.const.*s chaine de caractere
- * @param char.(*f)(unsigned int, char) fonction a appliquer
- * a chque caracters
- * @return nouvelle chaine de caractere avec les caracteres modifies
- */				
+ * @brief Applies a function that applies the function f 
+ * to the characters of a string s.
+ * @param char.const.*s Character string.
+ * @param char.(*f)(unsigned int, char) Function to be applied
+ * to each character.
+ * @return New character string with modified characters.
+ */		
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 /**
  * @details
- * @brief renvoie toute la chaine de caractere depuis la premiere 
- * occurence de c 
- * @param char.const.*s chaine de caractere
- * @param int.c caractere a trouver 
- * @return nouvelle chaine de caractere s depuis 
- * le premier c rencontre sinon NULL
- */	
+ * @brief returns the entire character string from the first 
+ * occurrence of c 
+ * @param char.const.*s character string
+ * @param int.c character to find 
+ * @return new character string s from 
+ * the first c encountered, otherwise NULL
+ */
 char			*ft_strchr(const char *s, int c);
 /**
  * @details
- * @brief cherche la derniere occurence et renvoie un pointeur
- * vers cette position 
- * @param char.const.*s chaine de caractere
- * @param int.c caractere a trouver 
- * @return nouvelle chaine de caractere s depuis 
- * le premier c rencontre sinon NULL
+ * @brief searches for the last occurrence and returns a pointer
+ * to that position 
+ * @param char.const.*s character string
+ * @param int.c character to find 
+ * @return new character string s from 
+ * the first c found, otherwise NULL
  */	
 char			*ft_strrchr(const char *s, int c);
 /**
  * @details
- * @brief Nettoie une chaine (supprime tous les caracteres 
- * non presents dans set)
- * @param char.const.*s1 chaine de caractere
- * @param char.const.*set caracteres a nottoyer
- * @return nouvelle chaine contenant s1 sans les aracteres de set
+ * @brief Cleans a string (removes all characters 
+ * not present in set)
+ * @param char.const.*s1 character string
+ * @param char.const.*set characters to be cleaned
+ * @return new string containing s1 without the characters in set
  */	
 char			*ft_strtrim(char const *s1, char const *set);
 /**
  * @details
- * @brief cree un nouveau noeud avec la struct t_list
- * @param void.*content contenu du nouveau noeud
+ * @brief Creates a new node with the t_list structure.
+ * @param void.*content Content of the new node.
  * @return node
  */
 t_list			*ft_lstnew(void *content);
 /**
  * @details
- * @brief ajoute un nouveau noeud en tete (new->a->b)
- * @param t_list.**lst liste
- * @param t_list.*new le nouveau noeud de tete
+ * @brief adds a new node at the head (new->a->b)
+ * @param t_list.**lst list
+ * @param t_list.*new the new head node
  * @return void
  */
 void			ft_lstadd_front(t_list **lst, t_list *new);
 /**
  * @details
- * @brief ajoute un nouveau noeud a la fin (a->b->new)
- * @param t_list.**lst liste des noeuds
- * @param t_list.*new le nouveau noeud de tete
+ * @brief adds a new node at the end (a->b->new)
+ * @param t_list.**lst list of nodes
+ * @param t_list.*new the new head node
  * @return void
  */
 void			ft_lstadd_back(t_list **lst, t_list *new);
 /**
  * @details
- * @brief obtient le dernier element
- * @param t_list.*lst noeud
- * @return lst (dernier element)
+ * @brief gets the last element
+ * @param t_list.*lst node
+ * @return lst (last element)
  */
 t_list			*ft_lstlast(t_list *lst);
 /**
  * @details
- * @brief compte les elements de la list
- * @param t_list.*lst noeud
- * @return taille de la liste
+ * @brief counts the elements in the list
+ * @param t_list.*lst node
+ * @return size of the list
  */
 int				ft_lstsize(t_list *lst);
 /**
  * @details
- * @brief Supprime un noeud
- * @param t_list.*lst noeud
- * @param void.(*del)(void *) fonction del pour effacer le contenu puis le noeud
+ * @brief Deletes a node
+ * @param t_list.*lst node
+ * @param void.(*del)(void *) del function to clear the content and then the node
  * @return void
  */
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
 /**
  * @details
- * @brief Supprime la liste
- * @param t_list.**lst liste
- * @param void.(*del)(void *) fonction del pour effacer le contenu puis le noeud
+ * @brief Deletes the list
+ * @param t_list.**lst list
+ * @param void.(*del)(void *) del function to clear the content and then the node
  * @return void
  */
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 /**
  * @details
- * @brief applique une fonction a chaque element
- * @param t_list.*lst noeud
- * @param void.(*f)(void *) fonction a appliquer a chaque elements
+ * @brief applies a function to each element
+ * @param t_list.*lst node
+ * @param void.(*f)(void *) function to apply to each element
  * @return void
  */
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 /**
  * @details
- * @brief applique une fonction a chaque element et cree une 
- * nouvelle liste avec les resultats si malloc echoue , on applique del
- * @param t_list.*lst noeud
- * @param void.(*del)(void *) fonction del pour effacer le contenu puis le noeud
- * @param void.(*f)(void *) fonction a appliquer a chaque elements
- * @return la nouvelle list
+ * @brief applies a function to each element and creates a 
+ * new list with the results; if malloc fails, del is applied
+ * @param t_list.*lst node
+ * @param void.(*del)(void *) del function to delete 
+ * the content and then the node
+ * @param void.(*f)(void *) function to apply to each element
+ * @return the new list
  */
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
