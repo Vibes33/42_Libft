@@ -20,8 +20,9 @@ void	ft_putendl_fd(char *s, int fd)
 
 //int    main(int argc, char **argv)
 //{
+//	(void)argc;
 //    int    fd;
-//    fd = atoi(argv[2]);
-//    ft_putendl_fd(argv[1], fd);
-//    return (0);
+//   fd = atoi(argv[2]);
+//   ft_putendl_fd(argv[1], fd);
+//  return (0);
 //}

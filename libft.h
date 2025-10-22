@@ -48,9 +48,9 @@ void			ft_bzero(void *s, size_t n);
 void			*ft_calloc(size_t count, size_t size);
 /**
  * @details
- * @brief est alphanumerique 
- * @param int c caractere a verifier
- * @return 1 ou 0
+ * @brief is alphanumeric 
+ * @param int c character to check
+ * @return 1 or 0
  */
 int				ft_isalnum(int c);
 /**
@@ -76,9 +76,9 @@ int				ft_isascii(int c);
 int				ft_isdigit(int c);
 /**
  * @details
- * @brief est printable 
- * @param int c caractere a verifier
- * @return 1 ou 0
+ * @brief is alphanumeric 
+ * @param int c character to check
+ * @return 1 or 0
  */
 int				ft_isprint(int c);
 /**
@@ -117,10 +117,10 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			*ft_memcpy(void *dest, const void *src, size_t n);
 /**
  * @details
- * @brief déplace une mémoire tampon vers une autre
+ * @brief moves a buffer to another buffer
  * @param const.void.*src source
  * @param void.*dest destination
- * @param size_t.n nombre d'octets à déplacer
+ * @param size_t.n number of bytes to move
  * @return dest
  */
 void			*ft_memmove(void *dest, const void *src, size_t n);
@@ -159,9 +159,9 @@ void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int nb, int fd);
 /**
  * @details
- * @brief lit une chaine de caractere
- * @param char.*str chaine de caractere
- * @param int.fd file descriptor , definit la sortie
+ * @brief reads a character string
+ * @param char.*str character string
+ * @param int.fd file descriptor, defines the output
  * @return void
  */
 void			ft_putstr_fd(char *str, int fd);
