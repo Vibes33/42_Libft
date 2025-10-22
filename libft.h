@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/21 16:54:47 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/22 13:29:02 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,9 @@ int				ft_isdigit(int c);
 int				ft_isprint(int c);
 /**
  * @details
- * @brief is printable
- * @param int c character to check
- * @return 1 or 0
+ * @brief int -> string
+ * @param int.n number to convert in string
+ * @return character string 
  */
 char			*ft_itoa(int n);
 /**
@@ -373,8 +373,8 @@ void			ft_lstiter(t_list *lst, void (*f)(void *));
  * @brief applies a function to each element and creates a 
  * new list with the results; if malloc fails, del is applied
  * @param t_list.*lst node
- * @param void.(*del)(void *) del function to delete 
- * the content and then the node
+ * @param void.(*del)(void *) del function to delete the content 
+ * and then the node
  * @param void.(*f)(void *) function to apply to each element
  * @return the new list
  */

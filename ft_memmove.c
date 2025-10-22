@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 12:34:23 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:31:13 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (const unsigned char *) src;
 	if (s < d)
 	{
-		while (n--)
+		while (n)
 		{
-			*d = *s;
+			d[n] = s[n];
+			n--;
 		}
 	}
 	else
 	{
-		*d++ = *s++;
+		while (n--)
+		{
+			*d++ = *s++;
+		}
 	}
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 09:49:40 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/17 09:04:09 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/22 15:25:19 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	write(fd, &s, 1);
+	ft_putstr_fd(s,fd);
 	write(fd, "\n", 1);
 }
+
+//int    main(int argc, char **argv)
+//{
+//    int    fd;
+//    fd = atoi(argv[2]);
+//    ft_putendl_fd(argv[1], fd);
+//    return (0);
+//}
