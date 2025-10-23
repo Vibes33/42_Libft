@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:14:06 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/20 16:51:41 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:34:33 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	ft_whitespace(char c)
 	return (0);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *nptr)
 {
 	int	total;
 	int	sign;
@@ -52,19 +52,19 @@ int	ft_atoi(char *str)
 	sign = 1;
 	total = 0;
 	i = 0;
-	while (ft_whitespace(str[i]))
+	while (ft_whitespace(nptr[i]))
 		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (nptr[i] == '+' || nptr[i] == '-')
 	{
-		if (str[i] == '-')
+		if (nptr[i] == '-')
 			sign *= -1;
 		i++;
 	}
-	if (too_long(&str[i], sign) != 1)
-		return (too_long(&str[i], sign));
-	while (str[i] >= '0' && str[i] <= '9')
+	if (too_long(&nptr[i], sign) != 1)
+		return (too_long(&nptr[i], sign));
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		total = total * 10 + (str[i] - '0');
+		total = total * 10 + (nptr[i] - '0');
 		i++;
 	}
 	return (sign * total);

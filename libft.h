@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/23 15:14:25 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:35:01 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ typedef struct s_list
  * @param char*str character string
  * @return int sign * total
  */
-int				ft_atoi(char *str);
+int				ft_atoi(const char *nptr);
 /**
  * @details
  * @brief Sets everything to zero
