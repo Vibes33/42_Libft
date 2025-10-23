@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:27:32 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/22 13:29:02 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:14:25 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -230,7 +230,7 @@ size_t			ft_strlen(const char *str);
  * @param unsigned.int.n number of characters to compare
  * @return 0 or the ASCII difference between the characters in the two strings
  */
-int				ft_strncmp(const char *s1, const char *s2, unsigned int n);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 /**
  * @details
  * @brief Takes a text extract from start, 
