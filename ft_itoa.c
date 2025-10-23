@@ -69,11 +69,6 @@ char	*ft_itoa(int n)
 //    char    *result;
 //    int        nbr;
 //
-//    if (argc != 2)
-//    {
-//        printf("Usage: %s <integer>\n", argv[0]);
-//        return (1);
-//    }
 //    nbr = atoi(argv[1]);
 //    result = ft_itoa(nbr);
 //    if (!result)
