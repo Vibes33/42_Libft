@@ -6,7 +6,7 @@
 /*   By: rydelepi <rydelepi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 13:52:05 by rydelepi          #+#    #+#             */
-/*   Updated: 2025/10/23 14:46:04 by rydelepi         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:09:23 by rydelepi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,14 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst || !new)
 		return ;
-	if (*lst || NULL)
+	if (*lst == NULL)
 	{
 		*lst = new;
 		return ;
 	}
 	else
 	{
-		last = *lst;
-		while (last->next)
-			last = last->next;
+		last = ft_lstlast(*lst);
 		last->next = new;
 	}
 }
