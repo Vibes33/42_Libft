@@ -31,12 +31,6 @@ void	*ft_calloc(size_t count, size_t size)
 //    size_t    size;
 //    char    *ptr;
 //    size_t    i;
-//
-//    if (argc != 3)
-//    {
-//        printf("Usage: %s <count> <size>\n", argv[0]);
-//        return (1);
-//    }
 //    count = (size_t)atoi(argv[1]);
 //    size = (size_t)atoi(argv[2]);
 //    ptr = (char *)ft_calloc(count, size);
